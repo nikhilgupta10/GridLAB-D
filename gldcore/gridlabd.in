@@ -278,7 +278,7 @@ else
 fi
 
 if test "x$TERM" = "xcygwin"; then :
-  export CXXFLAGS="-I${pkgdatadir/#\/usr/${WD//\\//}..} $CXXFLAGS"
+  export CXXFLAGS="-I${pkgdatadir} $CXXFLAGS"
 else
   export CXXFLAGS="-I$pkgdatadir $CXXFLAGS"
 fi
